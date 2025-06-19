@@ -1,87 +1,94 @@
-# See docs at: https://mystmd.org/guide/frontmatter
-version: 1
 project:
-  title: Leveraging Large Language Models for Interactive Exploration of MRI Research Reproducibility
-  subtitle: A Self-Evolving Review
-  thumbnail: banner.jpg
-  thebe:
-    binder:
-      url: https://binder-preview.conp.cloud
-      repo: agahkarakuzu/mriscope
-      ref: HEAD
-  authors:
-    - name: Agah Karakuzu
-      orcid: 0000-0001-7283-271X
-      github: agahkarakuzu
-      email: agah.karakuzu@polymtl.ca
-      twitter: agahkarakuzu
-      affiliations: polymtl; mhi
-      corresponding: true
-    - name: Mathieu Boudreau
-      orcid: 0000-0002-7726-4456
-      affiliations: polymtl;
-      github: mathieuboudreau
-      twitter: _mattboud
-    - name: Nikola Stikov
-      orcid: 0000-0002-8480-5230
-      twitter: stikov
-      affiliations: polymtl; mhi; macedonia
-  affiliations:
-    - id: polymtl
-      institution: NeuroPoly Lab, Polytechnique Montreal
-      ror: https://ror.org/05f8d4e86
-      isni: 0000 0004 0435 3292
-      department: Electrical Engineering
-      address: 2500 Chem. de Polytechnique
-      city: Montreal
-      region: Quebec
-      country: Canada
-      postal_code: H3T 1J4
-      phone: 1 (514) 340-4711
-    - id: mhi
-      institution: Montreal Heart Institute
-      ror: https://ror.org/03vs03g62
-      isni: 0000 0000 8995 9090
-      address: 5000 Rue Belanger
-      city: Montreal
-      region: Quebec
-      country: Canada
-      postal_code: H1T 1C8
-    - id: macedonia
-      name: Center for Advanced Interdisciplinary Research, University Ss Cyril and Methodius in Skopje
-      ror: https://ror.org/02wk2vx54
-      isni: 0000 0001 0708 5391
-      address:  Boulevard Goce Delchev 9
-      city: Skopje
-      country: North Macedonia
-      postal_code: 1000
-  keywords:
-    - Interactive Literature Review
-    - MRI Reproducibility
-    - Large Language Models
-    - AI-Assisted Systematic Review
-  github: https://github.com/agahkarakuzu/mriscope
-  banner: banner.jpg
-  venue: Neurolibre
-  subject: Living Preprint
-  numbering:
-    headings: true
-  doi: 10.55458/neurolibre.00021
-  open_access: true
-  license: CC-BY-4.0
   abbreviations:
-    MRI: Magnetic resonance imaging
-    qMRI: quantitative magnetic resonance imaging
     GPT: Generative Pre-trained Transformer
+    MRI: Magnetic resonance imaging
     MRM: Magnetic Resonance in Medicine
     UMAP: Uniform manifold approximation and projection
+    qMRI: quantitative magnetic resonance imaging
+  affiliations:
+  - address: 2500 Chem. de Polytechnique
+    city: Montreal
+    country: Canada
+    department: Electrical Engineering
+    id: polymtl
+    institution: NeuroPoly Lab, Polytechnique Montreal
+    isni: 0000 0004 0435 3292
+    phone: 1 (514) 340-4711
+    postal_code: H3T 1J4
+    region: Quebec
+    ror: https://ror.org/05f8d4e86
+  - address: 5000 Rue Belanger
+    city: Montreal
+    country: Canada
+    id: mhi
+    institution: Montreal Heart Institute
+    isni: 0000 0000 8995 9090
+    postal_code: H1T 1C8
+    region: Quebec
+    ror: https://ror.org/03vs03g62
+  - address: Boulevard Goce Delchev 9
+    city: Skopje
+    country: North Macedonia
+    id: macedonia
+    isni: 0000 0001 0708 5391
+    name: Center for Advanced Interdisciplinary Research, University Ss Cyril and
+      Methodius in Skopje
+    postal_code: 1000
+    ror: https://ror.org/02wk2vx54
+  authors:
+  - affiliations: polymtl; mhi
+    corresponding: true
+    email: agah.karakuzu@polymtl.ca
+    github: agahkarakuzu
+    name: Agah Karakuzu
+    orcid: 0000-0001-7283-271X
+    twitter: agahkarakuzu
+  - affiliations: polymtl;
+    github: mathieuboudreau
+    name: Mathieu Boudreau
+    orcid: 0000-0002-7726-4456
+    twitter: _mattboud
+  - affiliations: polymtl; mhi; macedonia
+    name: Nikola Stikov
+    orcid: 0000-0002-8480-5230
+    twitter: stikov
+  banner: banner.jpg
   bibliography:
-    - paper.bib
+  - paper.bib
+  copyright: NeuroLibre
+  doi: 10.55458/neurolibre.00021
+  github: https://github.com/roboneurolibre/mriscope
+  keywords:
+  - Interactive Literature Review
+  - MRI Reproducibility
+  - Large Language Models
+  - AI-Assisted Systematic Review
+  license:
+    code: GPL-3.0
+    content: CC-BY-4.0
+  numbering:
+    headings: true
+  open_access: true
   resources:
-    - content/literature_overview.ipynb
-    - content/gpt_insights.ipynb
-    - content/word_cloud.ipynb
+  - content/literature_overview.ipynb
+  - content/gpt_insights.ipynb
+  - content/word_cloud.ipynb
+  subject: Living Preprint
+  subtitle: A Self-Evolving Review
+  thebe:
+    binder:
+      ref: main
+      repo: roboneurolibre/mriscope
+      url: https://binder-mcgill.conp.cloud
+  thumbnail: banner.jpg
+  title: Leveraging Large Language Models for Interactive Exploration of MRI Research
+    Reproducibility
+  venue: NeuroLibre
 site:
-  template: article-theme
+  actions:
+  - title: "\U0001F3E0 Home"
+    url: https://doi.org/10.55458/neurolibre.00021
   options:
     numbered_references: true
+  template: article-theme
+version: 1
